@@ -13,8 +13,8 @@
     </style>
 </head>
 <body>
-    <p id="message">🔮 오늘은 어디로 떠나볼까? 🔮</p>
-    <button onclick="showRandomMessage()">눌러서 확인하기</button>
+    <p id="message">🌎 오늘은 어디로 떠나볼까? 🌎</p>
+    <button onclick="showRandomMessage()">오늘떠날 곳은?</button>
 
     <script>
         function showRandomMessage() {
@@ -22,6 +22,16 @@
                 "역사가 깊은 도시, 이스탄불",
                 "폭삭 속았수다, 제주",
                 "라라랜드 속 그곳, LA",
+                "에펠탑 앞에서 인생샷, 파리",
+                "춥지만 아름다운 겨울왕국, 모스크바",
+                "정열적인 삼바를 함께, 리우",
+                "열대과일과 힐링을, 방콕",
+                "만 개의 음식의 집합, 홍콩",
+                "이국적인 매력의 초대, 뮌헨",
+                "사막에서의 트래킹, 리야드",
+                "대추야자와 낙타, 두바이",
+                "정통의 스시와 온천, 도쿄",
+                "신사와 축구의 공존, 런던"
             ];
             document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
         }
