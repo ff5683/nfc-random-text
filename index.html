@@ -13,17 +13,15 @@
     </style>
 </head>
 <body>
-    <p id="message">🔮 마법의 NFC가 말하길... 🔮</p>
+    <p id="message">🔮 오늘은 어디로 떠나볼까? 🔮</p>
     <button onclick="showRandomMessage()">눌러서 확인하기</button>
 
     <script>
         function showRandomMessage() {
             const messages = [
-                "기다려 보세요.",
-                "안 돼요!",
-                "한 번 더 해보세요.",
-                "좋은 생각이에요!",
-                "다시 시도해보세요."
+                "역사가 깊은 도시, 이스탄불",
+                "폭삭 속았수다, 제주",
+                "라라랜드 속 그곳, LA",
             ];
             document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)];
         }
